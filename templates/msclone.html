@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <link href="../static/images/favicon.png" rel="icon" />
+    <title>Jose's MS Paint Clone</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../static/assets/css/msclone.css" />
+  </head>
+  <body class="is-preload">
+    <div class="top-bar">
+      <!-- Active Tool -->
+      <div class="active-tool">
+        <span id="active-tool" title="Active Tool">Brush</span>
+      </div>
+      <!-- Brush -->
+      <div class="brush tool">
+        <i class="fas fa-brush" id="brush" title="Brush"></i>
+        <input class="jscolor" value="1F54AB" id="brush-color" />
+        <span class="size" id="brush-size" title="Brush Size">10</span>
+        <input
+          type="range"
+          min="1"
+          max="50"
+          value="10"
+          class="slider"
+          id="brush-slider"
+        />
+      </div>
+      <!-- Bucket -->
+      <div class="bucket tool">
+        <i class="fas fa-fill-drip" title="Background Color"></i>
+        <input class="jscolor" value="ffffff" id="bucket-color" />
+      </div>
+      <!-- Eraser -->
+      <div class="tool">
+        <i class="fas fa-eraser" id="eraser" title="Eraser"></i>
+      </div>
+      <!-- Clear Canvas -->
+      <div class="tool">
+        <i class="fas fa-undo-alt" id="clear-canvas" title="Clear"></i>
+      </div>
+      <!-- Save Local Storage -->
+      <div class="tool">
+        <i
+          class="fas fa-download"
+          id="save-storage"
+          title="Save Local Storage"
+        ></i>
+      </div>
+      <!-- Load Local Storage -->
+      <div class="tool">
+        <i
+          class="fas fa-upload"
+          id="load-storage"
+          title="Load Local Storage"
+        ></i>
+      </div>
+      <!-- Clear Local Storage -->
+      <div class="tool">
+        <i
+          class="fas fa-trash-alt"
+          id="clear-storage"
+          title="Clear Local Storage"
+        ></i>
+      </div>
+      <!-- Download Image -->
+      <div class="tool">
+        <a id="download">
+          <i class="far fa-save" title="Save Image File"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Message -->
+    <div class="mobile-message">
+      <h2>This application only functions on larger screens.</h2>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../static/assets/js/jquery.min.js"></script>
+    <script src="../static/assets/js/jquery.poptrox.min.js"></script>
+    <script src="../static/assets/js/browser.min.js"></script>
+    <script src="../static/assets/js/breakpoints.min.js"></script>
+    <script src="../static/assets/js/util.js"></script>
+    <script src="../static/assets/js/main.js"></script>
+    <script src="../static/assets/js/msclone.js"></script>
+    <script src="../static/assets/js/mscolor.js"></script>
+  </body>
+</html>
