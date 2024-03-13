@@ -12,3 +12,14 @@ def home_page():
 @app.route('/<string:page_name>')
 def html_page(page_name):
     return render_template(page_name)
+
+
+@app.route('/submit_form', methods=['POST', 'GET'])
+def submit_form():
+    return 'form submitted! hurray!'
+    # if request.method == 'POST':
+    #     data = request.form.to_dict()
+    #     write_to_csv(data)
+    #     return redirect('/thankyou.html')
+    # else:
+    #     return 'Something went wrong. Try again!'
